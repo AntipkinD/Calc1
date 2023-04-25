@@ -1,4 +1,6 @@
-﻿namespace Calc1
+﻿using System.Text;
+
+namespace Calc1
 {
     public partial class CalculatorBase : Form
     {
@@ -7,6 +9,7 @@
             InitializeComponent();
         }
         int c = 0;
+        bool check1, check3;
         string history;
         decimal result;
         char something;
@@ -19,7 +22,7 @@
         {
 
         }
-        public void Kaknibud(char something)
+        public void DobavlenieVStroku(char something)
         {
             if (textBox1.Enabled == false)
                 textBox1.Text += something;
@@ -75,77 +78,101 @@
             textBox3_Click(sender, e);
         }
 
+        private void button26_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Enabled == false && check1 == false)
+            {
+                this.something = ',';
+                DobavlenieVStroku(this.something);
+                check1 = true;
+            }
+            if (textBox3.Enabled == false && check3 == false)
+            {
+                this.something = ',';
+                DobavlenieVStroku(this.something);
+                check3 = true;
+            }
+        }
         private void button7_Click(object sender, EventArgs e)
         {
             this.something = '0';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             this.something = '1';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             this.something = '2';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             this.something = '3';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
         private void button11_Click(object sender, EventArgs e)
         {
             this.something = '4';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             this.something = '5';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             this.something = '6';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             this.something = '7';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             this.something = '8';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             this.something = '9';
-            Kaknibud(this.something);
+            DobavlenieVStroku(this.something);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
+            textBox3.Text = textBox1.Text;
+            textBox1.Text = null;
             label1.Text = "sin";
+            textBox3_Click(sender, e);
         }
         private void button18_Click(object sender, EventArgs e)
         {
+            textBox3.Text = textBox1.Text;
+            textBox1.Text = null;
             label1.Text = "tg";
+            textBox3_Click(sender, e);
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
+            textBox3.Text = textBox1.Text;
+            textBox1.Text = null;
             label1.Text = "cos";
+            textBox3_Click(sender, e);
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -161,23 +188,30 @@
             textBox5.Clear();
             textBox1.Enabled = false;
             textBox5.Enabled = true;
-            textBox3.ReadOnly = false;
+            check1 = false;
+            check3 = false;
             c++;
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-
+            int res = Convert.ToInt32(Math.Round(result));
+            var bin = Convert.ToString(res, 2).ToUpper();
+            textBox5.Text = bin;
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-
+            int res = Convert.ToInt32(Math.Round(result));
+            var oct = Convert.ToString(res, 8).ToUpper();
+            textBox5.Text = oct;
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-
+            int res = Convert.ToInt32(Math.Round(result));
+            var hex = Convert.ToString(res, 16).ToUpper();
+            textBox5.Text = hex;
         }
 
         private void CalculatorBase_Load(object sender, EventArgs e)
@@ -234,13 +268,13 @@
                     result = Convert.ToDecimal(Math.Pow(double.Parse(textBox1.Text), double.Parse(textBox3.Text)));
                     break;
                 case ("sin"):
-                    result = Convert.ToDecimal(Math.Sin(double.Parse(textBox1.Text)));
+                    result = Convert.ToDecimal(Math.Sin(double.Parse(textBox3.Text)));
                     break;
                 case ("cos"):
-                    result = Convert.ToDecimal(Math.Cos(double.Parse(textBox1.Text)));
+                    result = Convert.ToDecimal(Math.Cos(double.Parse(textBox3.Text)));
                     break;
                 case ("tg"):
-                    result = Convert.ToDecimal(Math.Tan(double.Parse(textBox1.Text)));
+                    result = Convert.ToDecimal(Math.Tan(double.Parse(textBox3.Text)));
                     break;
             }
             textBox5.Text = Convert.ToString(result);
@@ -257,6 +291,16 @@
                 textBox1.Undo();
             if (textBox3.Enabled == false)
                 textBox3.Undo();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = Convert.ToString(result);
         }
     }
 }
