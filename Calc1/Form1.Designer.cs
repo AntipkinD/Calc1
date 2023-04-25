@@ -50,17 +50,20 @@
             button20 = new Button();
             button21 = new Button();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
             textBox3 = new TextBox();
-            textBox4 = new TextBox();
             textBox5 = new TextBox();
             button22 = new Button();
             button23 = new Button();
             button24 = new Button();
+            label1 = new Label();
+            label3 = new Label();
+            groupBox1 = new GroupBox();
+            button25 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(246, 143);
             button1.Name = "button1";
@@ -72,6 +75,7 @@
             // 
             // button2
             // 
+            button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(246, 243);
             button2.Name = "button2";
@@ -83,6 +87,7 @@
             // 
             // button3
             // 
+            button3.Cursor = Cursors.Hand;
             button3.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(296, 143);
             button3.Name = "button3";
@@ -94,6 +99,7 @@
             // 
             // button4
             // 
+            button4.Cursor = Cursors.Hand;
             button4.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(296, 243);
             button4.Name = "button4";
@@ -105,6 +111,7 @@
             // 
             // button5
             // 
+            button5.Cursor = Cursors.Hand;
             button5.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button5.Location = new Point(296, 193);
             button5.Name = "button5";
@@ -116,6 +123,7 @@
             // 
             // button6
             // 
+            button6.Cursor = Cursors.Hand;
             button6.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button6.Location = new Point(296, 293);
             button6.Name = "button6";
@@ -127,6 +135,7 @@
             // 
             // button7
             // 
+            button7.Cursor = Cursors.Hand;
             button7.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button7.Location = new Point(346, 293);
             button7.Name = "button7";
@@ -138,6 +147,7 @@
             // 
             // button8
             // 
+            button8.Cursor = Cursors.Hand;
             button8.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button8.Location = new Point(346, 243);
             button8.Name = "button8";
@@ -149,6 +159,7 @@
             // 
             // button9
             // 
+            button9.Cursor = Cursors.Hand;
             button9.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button9.Location = new Point(395, 243);
             button9.Name = "button9";
@@ -160,6 +171,7 @@
             // 
             // button10
             // 
+            button10.Cursor = Cursors.Hand;
             button10.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button10.Location = new Point(445, 243);
             button10.Name = "button10";
@@ -171,6 +183,7 @@
             // 
             // button11
             // 
+            button11.Cursor = Cursors.Hand;
             button11.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button11.Location = new Point(346, 193);
             button11.Name = "button11";
@@ -182,6 +195,7 @@
             // 
             // button12
             // 
+            button12.Cursor = Cursors.Hand;
             button12.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button12.Location = new Point(395, 193);
             button12.Name = "button12";
@@ -193,6 +207,7 @@
             // 
             // button13
             // 
+            button13.Cursor = Cursors.Hand;
             button13.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button13.Location = new Point(445, 193);
             button13.Name = "button13";
@@ -204,6 +219,7 @@
             // 
             // button14
             // 
+            button14.Cursor = Cursors.Hand;
             button14.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button14.Location = new Point(346, 143);
             button14.Name = "button14";
@@ -215,6 +231,7 @@
             // 
             // button15
             // 
+            button15.Cursor = Cursors.Hand;
             button15.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button15.Location = new Point(395, 143);
             button15.Name = "button15";
@@ -226,6 +243,7 @@
             // 
             // button16
             // 
+            button16.Cursor = Cursors.Hand;
             button16.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button16.Location = new Point(445, 143);
             button16.Name = "button16";
@@ -237,6 +255,7 @@
             // 
             // button17
             // 
+            button17.Cursor = Cursors.Hand;
             button17.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button17.Location = new Point(495, 143);
             button17.Name = "button17";
@@ -248,6 +267,7 @@
             // 
             // button18
             // 
+            button18.Cursor = Cursors.Hand;
             button18.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button18.Location = new Point(495, 243);
             button18.Name = "button18";
@@ -259,6 +279,7 @@
             // 
             // button19
             // 
+            button19.Cursor = Cursors.Hand;
             button19.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button19.Location = new Point(495, 193);
             button19.Name = "button19";
@@ -270,6 +291,7 @@
             // 
             // button20
             // 
+            button20.Cursor = Cursors.Hand;
             button20.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button20.Location = new Point(495, 293);
             button20.Name = "button20";
@@ -281,6 +303,7 @@
             // 
             // button21
             // 
+            button21.Cursor = Cursors.Hand;
             button21.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
             button21.Location = new Point(545, 193);
             button21.Name = "button21";
@@ -288,23 +311,17 @@
             button21.TabIndex = 20;
             button21.Text = "=";
             button21.UseVisualStyleBackColor = true;
+            button21.Click += button21_Click;
             // 
             // textBox1
             // 
+            textBox1.Enabled = false;
             textBox1.Location = new Point(92, 114);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(200, 25);
             textBox1.TabIndex = 21;
+            textBox1.Click += textBox1_Click;
             textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(293, 114);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(50, 25);
-            textBox2.TabIndex = 22;
-            textBox2.TextAlign = HorizontalAlignment.Center;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -312,18 +329,8 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(200, 25);
             textBox3.TabIndex = 23;
+            textBox3.Click += textBox3_Click;
             textBox3.TextChanged += textBox3_TextChanged;
-            // 
-            // textBox4
-            // 
-            textBox4.Anchor = AnchorStyles.None;
-            textBox4.Location = new Point(545, 114);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(50, 25);
-            textBox4.TabIndex = 24;
-            textBox4.Text = "=";
-            textBox4.TextAlign = HorizontalAlignment.Center;
-            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox5
             // 
@@ -335,6 +342,7 @@
             // 
             // button22
             // 
+            button22.Cursor = Cursors.Hand;
             button22.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button22.Location = new Point(246, 349);
             button22.Name = "button22";
@@ -346,6 +354,7 @@
             // 
             // button23
             // 
+            button23.Cursor = Cursors.Hand;
             button23.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button23.Location = new Point(346, 349);
             button23.Name = "button23";
@@ -357,6 +366,7 @@
             // 
             // button24
             // 
+            button24.Cursor = Cursors.Hand;
             button24.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button24.Location = new Point(445, 349);
             button24.Name = "button24";
@@ -366,19 +376,64 @@
             button24.UseVisualStyleBackColor = true;
             button24.Click += button24_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(298, 114);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 23);
+            label1.TabIndex = 29;
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(558, 114);
+            label3.Name = "label3";
+            label3.Size = new Size(26, 28);
+            label3.TabIndex = 31;
+            label3.Text = "=";
+            label3.Click += label3_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(596, 145);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(200, 254);
+            groupBox1.TabIndex = 32;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "История";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // button25
+            // 
+            button25.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button25.Location = new Point(545, 143);
+            button25.Name = "button25";
+            button25.Size = new Size(50, 50);
+            button25.TabIndex = 33;
+            button25.Text = "с";
+            button25.UseVisualStyleBackColor = true;
+            button25.Click += button25_Click;
+            // 
             // CalculatorBase
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScrollMargin = new Size(16, 9);
             ClientSize = new Size(873, 461);
+            Controls.Add(button25);
+            Controls.Add(groupBox1);
+            Controls.Add(label3);
+            Controls.Add(label1);
             Controls.Add(button24);
             Controls.Add(button23);
             Controls.Add(button22);
             Controls.Add(textBox5);
-            Controls.Add(textBox4);
             Controls.Add(textBox3);
-            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button21);
             Controls.Add(button20);
@@ -403,6 +458,7 @@
             Controls.Add(button1);
             Name = "CalculatorBase";
             Text = "Calculator";
+            Load += CalculatorBase_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -431,12 +487,14 @@
         private Button button20;
         private Button button21;
         private TextBox textBox1;
-        private TextBox textBox2;
         private TextBox textBox3;
-        private TextBox textBox4;
         private TextBox textBox5;
         private Button button22;
         private Button button23;
         private Button button24;
+        private Label label1;
+        private Label label3;
+        private GroupBox groupBox1;
+        private Button button25;
     }
 }
