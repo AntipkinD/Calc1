@@ -58,7 +58,7 @@
             label1 = new Label();
             label3 = new Label();
             groupBox1 = new GroupBox();
-            button25 = new Button();
+            //button25 = new Button();
             button26 = new Button();
             button27 = new Button();
             label2 = new Label();
@@ -469,7 +469,7 @@
             // 
             // button25
             // 
-            button25.BackColor = Color.GreenYellow;
+            /*button25.BackColor = Color.GreenYellow;
             button25.Cursor = Cursors.Hand;
             button25.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             button25.ForeColor = Color.Indigo;
@@ -479,7 +479,7 @@
             button25.TabIndex = 33;
             button25.Text = "<x";
             button25.UseVisualStyleBackColor = false;
-            button25.Click += button25_Click;
+            button25.Click += button25_Click;*/
             // 
             // button26
             // 

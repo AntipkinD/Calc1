@@ -285,13 +285,13 @@ namespace Calc1
 
         }
 
-        private void button25_Click(object sender, EventArgs e)
+        /*private void button25_Click(object sender, EventArgs e)
         {
             if (textBox1.Enabled == false)
                 textBox1.Undo();
             if (textBox3.Enabled == false)
                 textBox3.Undo();
-        }
+        }*/
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
