@@ -177,11 +177,8 @@ namespace Calc1
 
         private void button20_Click(object sender, EventArgs e)
         {
-            if (textBox1 != null && textBox3 != null)
-            {
                 history = $"\n {textBox1.Text} {label1.Text} {textBox3.Text} {label3.Text} {textBox5.Text}";
                 histories.Add(history);
-            }
             groupBox1.Text += histories[c];
             textBox3.Enabled = true;
             textBox1.Clear();
