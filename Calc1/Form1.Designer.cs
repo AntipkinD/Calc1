@@ -58,10 +58,12 @@
             label1 = new Label();
             label3 = new Label();
             groupBox1 = new GroupBox();
-            //button25 = new Button();
             button26 = new Button();
             button27 = new Button();
             label2 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -436,10 +438,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.BackColor = Color.GreenYellow;
+            label1.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Indigo;
             label1.Location = new Point(298, 114);
             label1.Name = "label1";
-            label1.Size = new Size(0, 23);
+            label1.Size = new Size(0, 25);
             label1.TabIndex = 29;
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click;
@@ -447,8 +451,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.PaleGreen;
             label3.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Indigo;
+            label3.ForeColor = Color.BlueViolet;
             label3.Location = new Point(558, 114);
             label3.Name = "label3";
             label3.Size = new Size(26, 28);
@@ -459,6 +464,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.SandyBrown;
+            groupBox1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.ForeColor = Color.OrangeRed;
             groupBox1.Location = new Point(596, 145);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(200, 254);
@@ -466,20 +473,6 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "История";
             groupBox1.Enter += groupBox1_Enter;
-            // 
-            // button25
-            // 
-            /*button25.BackColor = Color.GreenYellow;
-            button25.Cursor = Cursors.Hand;
-            button25.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button25.ForeColor = Color.Indigo;
-            button25.Location = new Point(545, 143);
-            button25.Name = "button25";
-            button25.Size = new Size(50, 50);
-            button25.TabIndex = 33;
-            button25.Text = "<x";
-            button25.UseVisualStyleBackColor = false;
-            button25.Click += button25_Click;*/
             // 
             // button26
             // 
@@ -500,6 +493,7 @@
             // button27
             // 
             button27.BackColor = Color.DarkOrchid;
+            button27.Cursor = Cursors.Hand;
             button27.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button27.ForeColor = Color.GreenYellow;
             button27.ImageAlign = ContentAlignment.TopCenter;
@@ -522,6 +516,42 @@
             label2.TabIndex = 36;
             label2.Text = "КАЛЬКУЛЯТОР 2.0";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.DarkSlateBlue;
+            label4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.DarkOrange;
+            label4.Location = new Point(92, 92);
+            label4.Name = "label4";
+            label4.Size = new Size(71, 19);
+            label4.TabIndex = 37;
+            label4.Text = "Число 1";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.DarkSlateBlue;
+            label5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.DarkOrange;
+            label5.Location = new Point(344, 92);
+            label5.Name = "label5";
+            label5.Size = new Size(71, 19);
+            label5.TabIndex = 38;
+            label5.Text = "Число 2";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.OrangeRed;
+            label6.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.SandyBrown;
+            label6.Location = new Point(596, 92);
+            label6.Name = "label6";
+            label6.Size = new Size(57, 19);
+            label6.TabIndex = 39;
+            label6.Text = "Ответ";
+            // 
             // CalculatorBase
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -529,11 +559,13 @@
             AutoScrollMargin = new Size(16, 9);
             BackColor = Color.MediumSlateBlue;
             ClientSize = new Size(873, 461);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(button27);
             Controls.Add(button20);
             Controls.Add(button26);
-            Controls.Add(button25);
             Controls.Add(groupBox1);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -606,5 +638,8 @@
         private Button button26;
         private Button button27;
         private Label label2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }
