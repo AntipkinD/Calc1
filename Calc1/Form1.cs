@@ -8,6 +8,17 @@ namespace Calc1
         {
             InitializeComponent();
         }
+        string bin = null;
+        public string ToBin(long res)
+        {
+            bin = null;
+                while (res > 0)
+                {
+                    bin = String.Concat(Convert.ToString(res % 2), bin);
+                    res /= 2;
+                }
+                return bin;
+        }
         int c = 0;
         bool check1, check3;
         string history;
@@ -195,8 +206,9 @@ namespace Calc1
 
         private void button22_Click(object sender, EventArgs e)
         {
-            int res = Convert.ToInt32(Math.Round(result));
-            var bin = Convert.ToString(res, 2).ToUpper();
+            textBox5.Text = null;
+            long res = Convert.ToInt32(Math.Round(result));
+            ToBin(res);
             textBox5.Text = bin;
         }
 
